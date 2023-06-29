@@ -22,3 +22,9 @@ def replace_with_number(pwd_word):
         replace_index = random.randrange(len(pwd_word)//2)
         pwd_word = pwd_word[0: replace_index] + pwd_word[replace_index].upper() + pwd_word[replace_index + 1]
         return pwd_word
+
+def replace_with_uppercase_letter(pwd_word):
+    for i in range(random.randrange(1,3)):
+        replace_index = random.randrange(len(pword)//2,len(pword))
+        pwd_word = pwd_word[0:replace_index] + pwd_word[replace_index].upper() + pwd_word[replace_index+1:]
+        return pwd_word
